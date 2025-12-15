@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   // Semi-transparent background for trail effect
-  background(0, 0.2);  // Adding opacity to create fade effect
+  background(0);  // Adding opacity to create fade effect
   fill(hue, 100, 100)
   hue = (hue + 1) % 360
   noStroke()  // Remove stroke from the ball
