@@ -4,7 +4,7 @@ let gravity = 1
 let x = 300
 let y = 300
 let hue = 0
-const canvasSize = 600
+const canvasSize = 1000
 const ballSize = 25
 
 function setup() {
