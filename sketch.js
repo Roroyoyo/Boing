@@ -36,12 +36,12 @@ function draw() {
         gravity = 1  // Keep gravity constant instead of increasing it
     } else {
         gravity = 1
-        if (y > 600 - ballSize) {
-            y = 600 - ballSize
+        if (y > canvasSize - ballSize) {
+            y = canvasSize - ballSize
             
         };
-         if (x > 600 - ballSize) {
-            x = 600 - ballSize
+         if (x > canvasSize - ballSize) {
+            x = canvasSize - ballSize
             
         };
          if (x < 0 - ballSize) {
