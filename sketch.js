@@ -1,10 +1,11 @@
 let speedx = 10
 let speedy = 10
-let gravity = 1
-let x = 300
+let gravity = canvasSize/2
+let x = canvasSize/2
 let y = 300
 let hue = 0
-const canvasSize = 600
+const canvasSize = 1000
+
 const ballSize = 25
 
 function setup() {
