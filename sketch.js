@@ -1,8 +1,8 @@
 let speedx = 10
 let speedy = 10
-let gravity = canvasSize/2
+let gravity = 5
 let x = canvasSize/2
-let y = 300
+let y = canvasSize/2
 let hue = 0
 const canvasSize = 1000
 
