@@ -6,7 +6,7 @@ let gravity = 1
 let x = 300
 let y = 300
 let hue = 0
-const canvasSize = 240
+const canvasSize = 600
 const ballSize = 25
 
 function setup() {
@@ -18,9 +18,10 @@ function setup() {
 
 function draw() {
   background(220);
-}
   // Semi-transparent background for trail effect
-  background(220, 0.2);  // Adding opacity to create fade effect
+  colorMode(RGB)
+  background(220,220,220 0.2);  // Adding opacity to create fade effect
+  colorMode(HSB)
   fill(hue, 100, 100)
   hue = (hue + 1) % 360
   noStroke()  // Remove stroke from the ball
