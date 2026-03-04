@@ -1,11 +1,12 @@
+let ball
+ballvy = 4;
 let speedx = 10
 let speedy = 10
-let gravity = 5
-let x = canvasSize/2
-let y = canvasSize/2
+let gravity = 1
+let x = 300
+let y = 300
 let hue = 0
-const canvasSize = 1000
-
+const canvasSize = 240
 const ballSize = 25
 
 function setup() {
@@ -16,6 +17,8 @@ function setup() {
 }
 
 function draw() {
+  background(220);
+}
   // Semi-transparent background for trail effect
   background(220, 0.2);  // Adding opacity to create fade effect
   fill(hue, 100, 100)
@@ -37,12 +40,12 @@ function draw() {
         gravity = 1  // Keep gravity constant instead of increasing it
     } else {
         gravity = 1
-        if (y > canvasSize - ballSize) {
-            y = canvasSize - ballSize
+        if (y > 600 - ballSize) {
+            y = 600 - ballSize
             
         };
-         if (x > canvasSize - ballSize) {
-            x = canvasSize - ballSize
+         if (x > 600 - ballSize) {
+            x = 600 - ballSize
             
         };
          if (x < 0 - ballSize) {
