@@ -47,7 +47,7 @@ function draw() {
             x = 600 - ballSize
             
         };
-         if (x < 0 - ballSize) {
+         if (x < 0 - (ballSize*1.5)) {
             x = 0 - ballSize
             
         };
