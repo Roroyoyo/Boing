@@ -11,21 +11,19 @@ const ballSize = 25
 
 function setup() {
   createCanvas(canvasSize, canvasSize);
-  colorMode(HSB)
   speedx = random(5, 15)
   speedy = random(5, 15)
 }
 
 function draw() {
-  background(220);
-  // Semi-transparent background for trail effect
-  colorMode(RGB)
-  background(220,220,220 0.2);  // Adding opacity to create fade effect
+   colorMode(RGB)
+  background(220,220,220,50 );
   colorMode(HSB)
-  fill(hue, 100, 100)
+  fill(hue, 255, 100) 
   hue = (hue + 1) % 360
   noStroke()  // Remove stroke from the ball
   ellipse(x, y, ballSize, ballSize)
+  text("space to bounce", 200, 50 )
   
   x += speedx
   y += speedy
@@ -42,19 +40,18 @@ function draw() {
     } else {
         gravity = 1
         if (y > 600 - ballSize) {
-            y = 600 - ballSize
+            y = (600 - (ballSize * 1.5))
             
         };
          if (x > 600 - ballSize) {
             x = 600 - ballSize
             
         };
-         if (x < 0 - ballSize) {
+         if (x < 0 - (ballSize*1.5)) {
             x = 0 - ballSize
             
         };
-        
-    }
+    }   
 }
 
 function keyPressed() {
