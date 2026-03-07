@@ -40,7 +40,7 @@ function draw() {
     } else {
         gravity = 1
         if (y > 600 - ballSize) {
-            y = 600 - ballSize
+            y = (600 - (ballSize * 1.5))
             
         };
          if (x > 600 - ballSize) {
