@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
    colorMode(RGB)
-  background(220,220,220,50 );
+  background(225,225,225,50 );
   colorMode(HSB)
   fill(hue, 255, 100) 
   hue = (hue + 1) % 360
