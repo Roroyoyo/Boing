@@ -36,7 +36,8 @@ function draw() {
       speedy = -speedy * 0.8  // Added dampening factor
     }
     if (y < ballSize) {
-        gravity = 1  // Keep gravity constant instead of increasing it
+        gravity = 1 // Keep gravity constant instead of increasing it
+      y=ballsize-(ballsize*1.5)
     } else {
         gravity = 1
         if (y > 600 - ballSize) {
