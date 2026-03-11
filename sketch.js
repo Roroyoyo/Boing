@@ -42,8 +42,8 @@ function draw() {
     }
     if (y < ballSize) {
         gravity = 1 // Keep gravity constant instead of increasing it
-     y==canvasSize+(ballSize*2)
-      speedy=speedy-(speedy*2.5)
+     y=y+(ballSize*2)
+      speedy=speedy-(speedy*2)
     } else {
         gravity = 1
         if (y > canvasSize - ballSize) {
