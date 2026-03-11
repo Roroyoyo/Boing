@@ -10,6 +10,11 @@ const canvasSize = 1200
 const ballSize = 25
 
 function setup() {
+  canvas.style.position = "absolute";
+canvas.style.top = "50%";
+canvas.style.left = "50%";
+canvas.style.transform = "translate(-50%, -50%)";
+
   createCanvas(canvasSize, canvasSize);
   speedx = random(5, 15)
   speedy = random(5, 15)
