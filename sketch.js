@@ -3,10 +3,10 @@ ballvy = 4;
 let speedx = 10
 let speedy = 10
 let gravity = 1
-let x = 600
-let y = 600
+let x = 450
+let y = 450
 let hue = 0
-const canvasSize = 1200
+const canvasSize = 900
 const ballSize = 25
 
 function setup() {
