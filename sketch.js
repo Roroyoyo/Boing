@@ -3,10 +3,10 @@ ballvy = 4;
 let speedx = 10
 let speedy = 10
 let gravity = 1
-let x = 300
-let y = 300
+let x = 600
+let y = 600
 let hue = 0
-const canvasSize = 600
+const canvasSize = 1200
 const ballSize = 25
 
 function setup() {
@@ -40,11 +40,11 @@ function draw() {
       y=ballsize-(ballsize*1.5)
     } else {
         gravity = 1
-        if (y > 600 - ballSize) {
+        if (y > canvasSize - ballSize) {
             y = (600 - (ballSize * 1.5))
             
         };
-         if (x > 600 - ballSize) {
+         if (x > canvasSize - ballSize) {
             x = 600 - ballSize
             
         };
